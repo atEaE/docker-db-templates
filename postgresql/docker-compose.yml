@@ -1,0 +1,17 @@
+version: "2.2"
+services:
+  db:
+    build: .
+    ports:
+     - "5432:5432"
+    restart: on-failure
+    environment: 
+     - TZ=Asia/Tokyo
+     - POSTGRES_USER=test
+     - POSTGRES_PASSWORD=password
+     - POSTGRES_DB=testdb
+     - POSTGRES_INITDB_ARGS=--encoding=UTF-8
+    volumes:
+     - ./ini:/docker-entrypoint-initdb.d
+     - ./database:/var/lib/postgresql
+
