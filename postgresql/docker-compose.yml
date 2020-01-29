@@ -15,6 +15,7 @@ services:
     volumes:
      - ./ini:/docker-entrypoint-initdb.d
      - ./database:/var/lib/postgresql
+    tty: true
 
 volumes: 
   ini:
