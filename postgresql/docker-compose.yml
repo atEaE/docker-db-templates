@@ -16,7 +16,3 @@ services:
      - ./ini:/docker-entrypoint-initdb.d
      - ./database:/var/lib/postgresql
     tty: true
-
-volumes: 
-  ini:
-    driver: local
