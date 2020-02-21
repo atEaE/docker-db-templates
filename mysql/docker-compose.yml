@@ -1,0 +1,14 @@
+version: "2.2"
+services:
+  db:
+    build: .
+    ports:
+     - "3306:3306"
+    restart: on-failure
+    environment: 
+     - MYSQL_ROOT_PASSWORD=root_password
+     - MYSQL_DATABASE=testdb
+     - MYSQL_USER=test
+     - MYSQL_PASSWORD=test_pass
+    volumes:
+     - ./conf:/etc/mysql/mysql.conf.d
