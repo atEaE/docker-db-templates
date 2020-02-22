@@ -12,3 +12,4 @@ services:
      - MYSQL_PASSWORD=test_pass
     volumes:
      - ./conf:/etc/mysql/mysql.conf.d
+    tty: true

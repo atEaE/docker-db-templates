@@ -13,7 +13,7 @@
    ![Test Connect](./docs/windows/03_test-connect.png)
 
 4. 最後に実際にDBへ接続を行う。  
-   先ほどと同様に設定情報を入れて、接続を行う。
+   先ほどと同様に設定情報を入れて、接続を行う。  
    ![Connect](./docs/windows/04_connect.png)  
    
    接続に成功すると、サイドメニューのTreeViewに構造が表示される。
