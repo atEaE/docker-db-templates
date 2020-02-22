@@ -13,3 +13,9 @@ services:
     volumes:
      - ./conf:/etc/mysql/mysql.conf.d
     tty: true
+
+  adminer:
+    image: adminer
+    restart: on-failure
+    ports:
+     - "8080:8080"
